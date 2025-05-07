@@ -6,6 +6,10 @@ author:
 description: |
   欢迎访问 Plana 的个人笔记！
 
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -15,6 +19,10 @@ theme: minima
 minima:
   skin: auto
   date_format: "%Y-%m-%d"
+  show_excerpts: false
+
+  nav_pages:
+    - about.md
 
   social_links:
     - title: Plana (@planadesu)
